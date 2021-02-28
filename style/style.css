@@ -1,0 +1,147 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* style for index.html*/
+
+.content{
+    background:rgb(255, 255, 255);  
+    color: rgb(179, 174, 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content>div {
+    display: inline-block;
+    box-shadow: 0 0 7px 3px #141518;
+    margin: 30px 0 30px 0;
+}
+
+.ukrainian_flag {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to top, #f7ce00 50%, #0058b5 50%);
+}
+
+.japan_flag {
+    width: 300px;
+    height: 200px;
+    background: radial-gradient(circle, #bc0e29 33%, #f5f4f4 34%);
+}
+
+.iceland_flag {
+    width: 300px;
+    height: 200px;
+    background: #02529c;
+    position: relative;
+}
+
+.iceland_flag::before {
+    content: "";
+    width: 50px;
+    height: 200px;
+    background: #ffffff;
+    position: absolute;
+    left: 75px;
+    top: 0; 
+}
+
+.iceland_flag::after {
+    content: "";
+    width: 300px;
+    height: 50px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 75px; 
+}
+
+.iceland_flag>span {
+    width: 25px;
+    height: 200px;
+    background: #dc1e35;
+    position: absolute;
+    left: 87.25px;
+    top: 0; 
+    z-index: 10;
+}
+
+.iceland_flag>span::before {
+    content: "";
+    width: 300px;
+    height: 25px;
+    background: #dc1e35;
+    position: absolute;
+    left: -87px;
+    top: 86.5px; 
+    z-index: 10;
+}
+
+.czech_flag {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to top, #d01319 50%, #f7f7f7 50%);
+    position: relative;
+}
+
+.czech_flag::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    border-top: 100px solid transparent;
+	border-left: 150px solid #11457e;
+	border-bottom: 100px solid transparent;
+}
